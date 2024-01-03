@@ -1,0 +1,143 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Table</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th *ngFor="let heading of headings">{{ heading }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of data">
+              <td *ngFor="let heading of headings">{{ row[heading] }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ol>
+    <li>பருவம் I மற்றும் பருவம் II 7 நாள் இளம்புழு வளர்ப்பு </li>
+    <li>பருவம் IV மற்றும் பருவம் V முதிர்புழு வளர்ப்பு </li></ol>
+</ion-content> -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Table</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"><br>
+  <p>நோயற்ற முட்டைத் தொகுப்பிற்கான அளவு அட்டவணை  1</p>
+  <ul>
+    <li>பருவம் I மற்றும் பருவம் II 7 நாள் இளம்புழு வளர்ப்பு </li>
+    <li>பருவம் IV மற்றும் பருவம் V முதிர்புழு வளர்ப்பு </li>
+  </ul>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="table-container">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th *ngFor="let heading of headings">{{ heading }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of data">
+                <td *ngFor="let heading of headings">{{ row[heading] }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p>நோயற்ற முட்டைத் தொகுப்பிற்கான அளவு அட்டவணை 2</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="table-container">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>தூவும் நேரம்</th>
+                <th>கிருமி நாசினி</th>
+                <th>கிராம் (ஒரு சதுர அடி படுக்கைப்பரப்புக்கு)</th>
+                <th>100 அட்டைக்கு தேவையான அளவு (கிராம்)
+
+                  )</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>மூன்றாம் தோலுரிப்பிற்கு பின்பும் உணவளிப்பதற்கு முன்பும்</td>
+                <td>விஜேதா, விஜேதா கிரீன், அங்குஷ்</td>
+                <td>5</td>
+                <td>900</td>
+                
+              </tr>
+              <tr>
+                <td>4 ஆம் பருவத்தின் 3 ஆம் நாள்</td>
+                <td>விஜேதா</td>
+                <td>3</td>
+                <td>600</td>
+                
+              </tr>
+              <tr>
+                <td>நான்காம் தோலுரிப்பிற்கு பின்பு உணவளிப்பதற்கு முன்பு</td>
+                <td>விஜேதா, விஜேதா கிரீன், அங்குஷ்</td>
+                <td>5</td>
+                <td>1200</td>
+            
+              </tr>
+              <tr>
+                <td>ஐந்தாம் பருவத்தின் இரண்டாம் நாள்</td>
+                <td>விஜேதா </td>
+                <td> 3</td>
+                <td>1300</td>
+               
+              </tr>
+              <tr>
+                <td>ஐந்தாம் பருவத்தின் நான்காம் நாள்</td>
+                <td>விஜேதா. விஜேதா கிரீன், அங்குஷ்</td>
+                <td>5</td>
+                <td>3000</td>
+               
+              </tr>
+              <tr>
+                <td>ஐந்தாம் பருவத்தின் ஆறாம் நாள்</td>
+                <td>விஜேதா </td>
+                <td>3</td>
+                <td>100</td>
+               
+              </tr>
+             
+              
+            </tbody>
+          </table>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p>
+    குறிப்பு</p>
+    <ul>
+      <li>மழை மற்றும் குளிர்காலங்களில் ஏற்படும் பூசண நோயைத் தடுக்க விஜேதா கிருமி நாசினி பரிந்துரை செய்யப்படுகிறது. </li>
+      <li>தோலுரிப்பிற்கு செல்லாத புழுக்கள் மீதும் உண்ணக்கூடிய இலைகள் மீதும் தூவக்கூடாது. </li>
+      <li>பவுடர் தூவிய அரைமணி நேரம் கழித்து புழுக்களுக்கு உணவளிக்க வேண்டும்.</li>
+    </ul>
+</ion-content>

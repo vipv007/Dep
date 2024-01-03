@@ -1,0 +1,73 @@
+
+
+ h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #19221d;
+}
+
+.table-card {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-card-header {
+  background-color: rgb(107, 159, 107);
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.table-card-row {
+  display: flex;
+}
+
+.table-card-cell {
+  flex: 1;
+  padding: 12px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 1px solid #ddd;
+
+}
+
+.table-card-body {
+  padding: 10px;
+  background-color: rgb(203, 248, 203);;
+}
+
+.table-card-cell:last-child {
+  border-right: none;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Adjust margin as needed */
+
+
+  /* Common Styles (applicable to both mobile and web views) */
+  label {
+    margin-bottom: 8px; /* Adjust label spacing */
+    margin-left: 15px;
+  }
+
+  select {
+    width: 50%; /* Full width for the select dropdown */
+    padding: 5px; /* Adjust padding as needed */
+    border-radius: 4px; /* Adjust border radius */
+    border: 1px solid #ccc; /* Adjust border color */
+    margin-left: 15px;
+  }
+}

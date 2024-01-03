@@ -1,0 +1,128 @@
+<!-- 
+<ion-header class="ion-no-border">
+  <ion-list lines="none">
+    <ion-item color="success">
+      <ion-icon slot="start" name="reorder-two"></ion-icon>
+    </ion-item>
+    <ion-item color="success">
+      <ion-label>மல்பெரி சாகுபடி 
+        வளர்ப்பு முறை
+        </ion-label>
+      <ion-avatar slot="end">
+        <img src="/assets/nature love.png"/>
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+  
+</ion-header>
+<ion-content>
+<ion-card>
+  
+  <ion-grid>
+      <p>மல்பெரி ரகம்</p>
+    <ion-row>
+      <ion-col>
+        <div (click)="goTomulberry()"><ion-card class="level"><img src="assets/silk.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div> 
+        <p>பட்டுப் புழுக்களின் வகை</p>
+        
+      </ion-col>
+      <ion-col>
+        <div (click)="goTomulberryseedling()"><ion-card class="level"><img src="assets/cycle.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div>
+        <p>பட்டுப்புழுவின் வாழ்க்கைச் சுழற்சி</p>
+        
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div (click)="goTodiseases()"><ion-card class="level"  ><img src="assets/mulberry.jpg" style="height: 100%;width: 100% ;" /></ion-card></div> 
+       <p>இலைகளின் நோய் அறிகுறிகள் </p>
+      
+      </ion-col>
+      <ion-col>
+        <div (click)="goToirrigation()"><ion-card class="level"><img src="assets/water.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div>
+       <p>நீர் மேலாண்மை</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><ion-card class="level" ><img src="assets/water.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div> 
+        <p>இரசாயன உரம் மற்றும் தொழு உரமிடுதல்</p>
+      </ion-col>
+      <ion-col>
+        <div (click)="goToharvesting()"><ion-card class="level"><img src="assets/மல்பெரிஅறுவடை.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div>
+
+        <p>மல்பெரி அறுவடை முறை</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+   
+</ion-card>
+
+</ion-content> -->
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+      <ion-title></ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+ <div>
+  <h2>பட்டுப் புழுக்களின் வகைபிரித்தல்</h2>
+  <ul>
+    <li><p>பட்டு உற்பத்தி செய்யும் பூச்சிகள் பொதுவாக <b>செரிஜெனஸ் பூச்சிகள்.</b>என்று குறிப்பிடப்படுகின்றன</p></li>
+
+    <li><p> இந்தியாவில் நான்கு வகையான பட்டுப்புழுக்கள் உள்ளன, அதற்கேற்ப பட்டுப்புழு வகைப்படுத்தப்படுகிறது
+     <b> மல்பெரி கலாச்சாரம், தாசர் கலாச்சாரம், முகா கலாச்சாரம் மற்றும் எரி கலாச்சாரம்..</b></p></li>
+    
+  </ul>
+  <h3>1. மல்பெரி பட்டு புழு</h3>
+<div class="card-container">
+  <ion-card class="card" href="/moult">
+    <img src="./assets/mulberry1.jpeg" alt="Mulberry Silk Worm Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/mulberry2.jfif" alt="Mulberry Silk Worm Image 2">
+  </ion-card>
+</div>
+<h3>2. தாசர் பட்டு புழு </h3>
+<div class="card-container">
+  <ion-card class="card">
+    <img src="./assets/tassar1.jpg" alt="Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/tassar2.jfif" alt="Image 2">
+  </ion-card>
+</div>
+<h3>3.முகா பட்டுப்புழு  </h3>
+<div class="card-container">
+  <ion-card class="card">
+    <img src="./assets/muga1.jfif" alt="Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/muga2.jfif" alt="Image 2">
+  </ion-card>
+</div>
+<h3>4. எரி பட்டுப் புழு </h3>
+<div class="card-container">
+  <ion-card class="card">
+    <img src="./assets/eri1.jpg" alt="Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/eri2.jpg" alt="Image 2">
+  </ion-card>
+</div>
+</div> 
+</ion-content>
+

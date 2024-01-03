@@ -1,0 +1,7 @@
+{
+  "name": "SeriCulture",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

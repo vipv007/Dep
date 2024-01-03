@@ -1,0 +1,62 @@
+/* Style ion-header */
+ion-header {
+  background-color: rgb(50, 255, 47);
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ion-toolbar {
+  padding: 0 13px;
+}
+
+/* Style ion-content */
+ion-content {
+  padding: 10px;
+}
+
+ion-item {
+  margin-bottom: 10px;
+}
+
+input[type='date'] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ion-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ion-card-header {
+  background-color: rgb(164, 230, 138);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ion-card-title {
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Additional styles for ion-select and content */
+ion-select {
+  background-color: rgb(164, 230, 138);
+  color: #dd7e09;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.content {
+  margin-top: 5%;
+  margin-left: 10px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+.content select {
+  margin-left: 30px;
+}

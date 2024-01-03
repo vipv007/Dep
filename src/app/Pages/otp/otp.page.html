@@ -1,0 +1,13 @@
+<!-- otp.component.html -->
+
+<div>
+  <h2>Mobile Number Verification</h2>
+
+  <div *ngIf="!isOtpSent">
+    <label for="mobileNumber">Enter your mobile number:</label>
+    <input type="text" id="mobileNumber" [(ngModel)]="mobileNumber" placeholder="e.g., 1234567890" />
+    <button (click)="generateOtp()">Generate OTP</button>
+  </div>
+
+  <!-- Add the OTP verification section here -->
+</div>

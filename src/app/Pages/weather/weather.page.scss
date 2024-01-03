@@ -1,0 +1,76 @@
+// /* Example CSS */
+// .custom-table {
+//     width: 50%;
+//     border-collapse: collapse;
+//     overflow-x: auto; /* Add horizontal scroll for small screens */
+//   }
+  
+//   .custom-table th,
+//   .custom-table td {
+//     border: 1px solid #ccc;
+//     padding: 6px;
+//     text-align: center;
+//     background-color: #e8f4ea;
+//     font-family: Georgia, 'Times New Roman', Times, serif;
+//     font-size: small;
+//   }
+  
+//   .custom-table th {
+//     background-color: #28f350;
+//     font-weight: bold;
+//     font-family: Georgia, 'Times New Roman', Times, serif;
+//   }
+  
+//   /* Media query for specific mobile view dimensions */
+//   @media (max-width: 344px) {
+//     /* Adjust the CSS for a mobile screen width of 344px */
+//     .custom-table th,
+//     .custom-table td {
+//       padding: 10px; /* Reduce padding for smaller screens */
+//       font-size: 10px; /* Decrease font size for smaller screens */
+//     }
+//     .custom-table th:nth-child(3),
+//     .custom-table td:nth-child(3) {
+//       min-width: 50px; /* Adjust the minimum width for the third column */
+//     }
+//   }
+//   li{
+//     font-size: small;
+//     text-align: center;
+//   }
+.table-container {
+  overflow-x: auto;
+  background-color: rgb(154, 230, 154);
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid rgb(9, 236, 28);
+  padding: 8px;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 10px; /* Adjust font size for better readability on smaller screens */
+  }
+}
+li {
+
+  font-size: 12px;
+  color: rgb(239, 138, 6);
+  
+}
+p{
+text-align: center;
+font-weight: bold;
+color:rgb(9, 233, 9);
+}

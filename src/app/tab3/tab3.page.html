@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+   
+    <ion-title><small><b style="color:green">கொக்கூன் சந்தை நிலவரம்</b></small></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="container">
+    <h1 class="text-center">Cocoon Market Rates</h1>
+
+    <div class="row justify-content-center filter-section">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <label for="breed" class="form-label">Select Breed:</label>
+        <select id="breed" [(ngModel)]="selectedBreed" (change)="filterData()" class="form-select">
+          <option *ngFor="let breed of breeds" [value]="breed">{{breed}}</option>
+        </select>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <label for="location" class="form-label">Select Location:</label>
+        <select id="location" [(ngModel)]="selectedLocation" (change)="filterData()" class="form-select">
+          <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+        </select>
+      </div>
+      <div class="text-center mt-3">
+        <button (click)="saveSelectedLocation()" class="btn btn-primary">Save Selected Location</button>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead class="table-card-header">
+          <tr class="table-card-row">
+            <th class="table-card-cell">Breed</th>
+            <th class="table-card-cell">Location</th>
+            <th class="table-card-cell">Date</th>
+            <th class="table-card-cell">Min Price</th>
+            <th class="table-card-cell">Max Price</th>
+            <th class="table-card-cell">Avg Price</th>
+            <th class="table-card-cell">Quantity</th>
+          </tr>
+        </thead>
+        <tbody class="table-card-body">
+          <tr class="table-card-row" *ngFor="let price of displayedPrices">
+            <td class="table-card-cell">{{price.Breed}}</td>
+            <td class="table-card-cell">{{price.Location}}</td>
+            <td class="table-card-cell">{{price.Date}}</td>
+            <td class="table-card-cell">{{price.Min_Price}}</td>
+            <td class="table-card-cell">{{price.Max_Price}}</td>
+            <td class="table-card-cell">{{price.Avg_Price}}</td>
+            <td class="table-card-cell">{{price.Quantity}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <h1 class="text-center">Cocoon MarketRates Chartview</h1>
+  <div>
+    <canvas id="priceChart" width="100" height="300"></canvas>
+  </div>
+  <h1 class="text-center">Additional Reference</h1>
+  
+  <div class="text-center mt-3">
+    <a href="frame" target="_blank" class="btn btn-danger">Pricing Reference</a>
+    <a href="https://tnsericulture.tn.gov.in/cocoonmarket" target="_blank" class="btn btn-success">Pricing Reference</a>
+  </div>
+  <br>
+</ion-content>
+

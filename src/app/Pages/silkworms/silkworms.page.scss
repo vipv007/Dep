@@ -1,0 +1,123 @@
+// ion-header {
+//     background: var(--ion-color-light);
+//     ion-list {
+//         background-color:white;
+//         border-radius: 0 0 20px 20px;
+//         padding-bottom: 7vh;
+//         ion-item {
+//             ion-label {
+//                 font-weight: bold;
+//                 font-size: 1.2rem;
+//                 letter-spacing: 0.5px;
+//             }
+//             ion-avatar {
+//                 background: white;
+//             }
+//         }
+//     }
+//     .popover {
+//         margin: 0 8px;
+//         ion-searchbar {
+//             --border-radius: 20px;
+//             margin-top: -30px;
+//         }
+//     }
+// }
+// .toolbar{
+//     height: 70px;
+//     //--background: #13c8f5c0;
+//     color: rgba(10, 230, 14, 0.637);
+//     font-size: 30px;
+//     line-height: 84px;
+//   }
+//  ion-content{
+    
+//     --background: rgba(234, 240, 233, 0.91);
+   
+//   }
+  
+// .img{
+//     width: 800px;
+//     height:200px;
+  
+//    // border:7px solid rgba(8, 143, 184, 0.5)
+//     }
+// .level{
+    
+//         width: 130px;
+//         height:120px;
+//  border-radius: 20%;
+// background-color: aqua;
+       
+//        // border:7px solid rgba(8, 143, 184, 0.5)
+
+  
+// }
+ion-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(88, 126, 30);
+    font-weight: bolder;
+}
+.para h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+.para p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: medium;
+}
+.para h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/*.card img{
+    border-radius: 80%;
+    height: 40%;
+    width: 40%;
+}*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 -5px; /* Adjust margin to prevent horizontal scrolling */
+    
+  }
+  
+  .card {
+    flex: 0 0 calc(50% - 10px); /* Adjust the width as needed */
+    margin: 3px;
+    border-radius:50px 50px 50px 50px;
+
+    overflow: hidden; /* Ensures the image doesn't overflow the rounded corners */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the entire image fits within the card */
+    border-radius:50px 50px 50px 50px;
+   padding: 18px;
+  }
+  h3{
+   
+    color: red;
+    font-size: 12px;
+  }
+  h2{
+    color: rgb(237, 87, 41);
+    font-size: 17px;
+    font-weight: bolder;
+ text-align: center;
+  }
+  li{
+    font-size: small;
+    color:green
+  }
+  

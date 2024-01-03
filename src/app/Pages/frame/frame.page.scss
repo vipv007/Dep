@@ -1,0 +1,24 @@
+ion-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+/* Apply styles to the iframe */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Optional: Remove iframe border */
+}
+
+/* Style the table inside the iframe */
+iframe table {
+  width: 100%; /* Set table width to 100% of the iframe */
+  table-layout: fixed; /* Fix the table layout */
+}
+
+/* Make the table body scrollable */
+iframe tbody {
+  display: block;
+  max-height: 350px; /* Set your desired maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}

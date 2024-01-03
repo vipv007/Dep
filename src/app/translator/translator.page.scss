@@ -1,0 +1,64 @@
+.content{
+    margin-top: 5%;
+    margin-left: 10px;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.content label{
+    font-weight: bolder;
+}
+
+.content select{
+    margin-left: 10px;
+}
+
+.content-section h2{
+    font-weight: bolder;
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+   font-size: large;
+}
+
+.content-section p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 10px;
+    color: #000;
+}
+
+.custom-tabs {
+  display: flex;
+}
+
+.tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #989595;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+}
+
+.tab.active {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+.tab:last-child {
+  margin-right: 0;
+}
+
+.day-section ion-label{
+  color: #f96e04;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.day-section ion-textarea{
+  font-weight: bold;
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}

@@ -1,0 +1,177 @@
+label{
+    display: inline-block;
+    margin-top: 15px;
+    color: #eb3e0a;
+    text-decoration: underline;
+    cursor:pointer;
+    font-weight: 600; 
+  }
+  .content{
+    display: none;
+    transition: 0.5s linear;
+  }
+  #check:checked ~ .content{
+    display: block;
+  }
+  #check1:checked ~ .content{
+    display: block;
+  }
+  #check2:checked ~ .content{
+    display: block;
+  }
+  #check:checked ~ label{
+    visibility: hidden;
+  }
+  #check1:checked ~ label{
+    visibility: hidden;
+  }
+  #check2:checked ~ label{
+    visibility: hidden;
+  }
+  #check:checked ~ label:after{
+    content:'Read Less';
+    display: block;
+    visibility: visible;
+  }
+  #check1:checked ~ label:after{
+    content:'Read Less';
+    display: block;
+    visibility: visible;
+  }
+  #check2:checked ~ label:after{
+    content:'Read Less';
+    display: block;
+    visibility: visible;
+  }
+   
+  
+  
+  
+  
+  .suba {
+  
+      width: 80%;
+  }
+  
+  .suba{
+      font-family:Times New Roman !important;
+      font-size:1.1em;
+    }
+  
+    .subav{
+      font-family:Times New Roman !important;
+      font-size:1.1em;
+    }
+  .venk{
+    font-family:Times New Roman !important;
+    background-color: lavender!important;
+    height:100%;
+  }
+ 
+  
+  
+  .custom-table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    margin-left: 10%;
+    
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+ 
+
+  ion-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: green; 
+  }
+
+li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    color: green; 
+}
+
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+    }
+    
+
+/* Apply general styling to the table */
+
+.custom-table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    margin-left: 10%;
+    
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+ 
+
+  ion-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: green; 
+  }
+  
+  .para h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 25px;
+    padding: 5px;
+    color: grey;
+  }
+
+  .para li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    padding: 10px;
+    line-height: 2;
+    
+  }
+
+  .para h3{
+    margin-left: 6%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .para p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    padding: 10px;
+    line-height: 2;
+  }
+  
+   

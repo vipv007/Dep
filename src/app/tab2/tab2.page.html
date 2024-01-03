@@ -1,0 +1,130 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Silkworm breeding
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="para">
+  <h1>Taxonomy of silk worms</h1>
+  <ul>
+    <li><p>Silk producing insects are commonly referred to as <b>serigenous insects.</b></p></li>
+
+    <li><p> There are four varieties of silkworms in India, accordingly sericulture is classified
+    into <b> Mulberry Culture, Tasar Culture, Muga Culture and Eri Culture.</b></p></li>
+    
+  </ul>
+  <h3>1. Mulberry Silk worm </h3>
+<div class="card-container">
+  <ion-card class="card" href="/moult">
+    <img src="./assets/mulberry1.jpeg" alt="Mulberry Silk Worm Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/mulberry2.jfif" alt="Mulberry Silk Worm Image 2">
+  </ion-card>
+</div>
+<h3>2. Tassar Silk worm </h3>
+<div class="card-container">
+  <ion-card class="card">
+    <img src="./assets/tassar1.jpg" alt="Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/tassar2.jfif" alt="Image 2">
+  </ion-card>
+</div>
+<h3>3.Muga Silkworm  </h3>
+<div class="card-container">
+  <ion-card class="card">
+    <img src="./assets/muga1.jfif" alt="Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/muga2.jfif" alt="Image 2">
+  </ion-card>
+</div>
+<h3>4. Eri silk worm  </h3>
+<div class="card-container">
+  <ion-card class="card">
+    <img src="./assets/eri1.jpg" alt="Image 1">
+  </ion-card>
+  <ion-card class="card">
+    <img src="./assets/eri2.jpg" alt="Image 2">
+  </ion-card>
+</div>
+</div> 
+</ion-content> -->
+
+
+<ion-header class="ion-no-border">
+  <ion-list lines="none">
+    <ion-item color="success">
+      <ion-icon slot="start" name="reorder-two"></ion-icon>
+    </ion-item>
+    <ion-item color="success">
+      <ion-label>பட்டுப்புழு
+        </ion-label>
+      <ion-avatar slot="end">
+        <img src="/assets/nature love.png"/>
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+  
+</ion-header>
+<ion-content>
+<ion-card>
+  
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <div (click)="goTosilkworms()"><ion-card class="level"><img src="assets/silk.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div> 
+        <p>பட்டுப் புழுக்களின் வகை</p>
+        
+      </ion-col>
+      <ion-col>
+        <div (click)="goTolifecycle()"><ion-card class="level"><img src="assets/cycle.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div>
+        <p>பட்டுப்புழுவின் வாழ்க்கைச் சுழற்சி</p>
+        
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div (click)="goTomoult()"><ion-card class="level"  ><img src="assets/eri1.jpg" style="height: 100%;width: 100% ;" /></ion-card></div> 
+       <p>பட்டுப்புழு தோல் உரிதல் பட்டியல் </p>
+      
+      </ion-col>
+      <ion-col>
+        <div (click)="goToweather()"><ion-card class="level"><img src="assets/பருவம்.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div>
+       <p>பருவம் நிலை</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div (click)="goTodisinfection()"><ion-card class="level" ><img src="assets/disflict.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div> 
+        <p>கிருமி நீக்கம் செய்தல்</p>
+      </ion-col>
+      <ion-col>
+        <div (click)="goTofertilizer()"><ion-card class="level"><img src="assets/மல்பெரிஅறுவடை.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div>
+
+        <p>
+          பட்டுப்புழு வளர்ப்பில் கிடைக்கும் கழிவை உரமாக பயன்படுத்துதல்</p>
+      </ion-col>
+      <ion-col>
+        <div (click)="goTofertilizer()"><ion-card class="level"><img src="assets/மல்பெரிஅறுவடை.jpeg" style="height: 100%;width: 100% ;" /></ion-card></div>
+
+        <p>
+          பண்ணைகளில் மல்பெரி மரக்கன்றுகள் விற்பனைக்குக் கிடைக்கும்.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+   
+</ion-card>
+
+</ion-content> 

@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>popup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let farm of farms" (click)="showFarmDetails(farm)">
+    <ion-card-header>
+      {{ farm.farmName }}
+    </ion-card-header>
+    <ion-card-content>
+      Location: {{ farm.location }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
