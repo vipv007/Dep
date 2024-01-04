@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install --verbose
+#RUN npm install --verbose
 
 # Copy the entire project to the working directory
 COPY . .
