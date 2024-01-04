@@ -1,4 +1,4 @@
-name: Build and Deploy Angular App
+name: CI/CD Pipeline
 
 on:
   push:
@@ -6,41 +6,26 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-    - name: Install Dependencies
-      run: npm install
-      working-directory: ./celestradepro
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            sindhusambasivam/seri_culture:latest
 
-    - name: Build Angular App
-      run: npm run build
-      working-directory: ./celestradepro
-
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
-
-    - name: Build Docker Image
-      run: |
-        docker build -t cmtq/cloud:${{ github.run_number }} -f ./celestradepro/Dockerfile .
-
-    - name: Log in to Docker Hub
-      run: |
-        docker login -u cmtq -p 90950047@
-
-    - name: Push Docker Image
-      run: |
-        docker push cmtq/cloud:${{ github.run_number }}
-
-    - name: Run Docker Container
-      run: |
-        docker run -d -p 4200:4200 cmtq/cloud:${{ github.run_number }}
+      - name: Run Docker Compose for local testing
+        run: docker-compose up -d
