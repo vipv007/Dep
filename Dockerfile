@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose port 4200
-EXPOSE 4200
+#EXPOSE 4200
 
 
 # Run Angular app with adjusted stack size
