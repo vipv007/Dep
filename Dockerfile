@@ -16,5 +16,6 @@ COPY . .
 # Expose port 4200
 EXPOSE 4200
 
-# Define the command to run your application
-CMD [ "npm", "start" ]
+
+# Run Angular app with adjusted stack size
+CMD ["node", "--stack-size=16000", "node_modules/@angular/cli/bin/ng", "serve", "--host", "0.0.0.0"]

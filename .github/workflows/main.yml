@@ -18,8 +18,10 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install Dependencies
-        run: npm install
+       - name: Install dependencies and run Angular app
+        run: |
+          npm install
+          node --stack-size=16000 ./node_modules/@angular/cli/bin/ng serve
 
       - name: Build Docker image
         run: |
