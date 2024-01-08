@@ -14,7 +14,7 @@ RUN npm install
 RUN npm install -g ionic
 
 # Copy the rest of the application code to the working directory
-#COPY ./CeleSmart .
+#COPY ./sericulture .
 
 # Build the Ionic app
  RUN ionic build
