@@ -5,7 +5,7 @@ FROM node:16 as build
 WORKDIR /app
 
 # Copy the package.json and package-lock.json from the Angular app directory to the container
-COPY ./sericulture /package*.json ./
+COPY ./sericulture/package*.json ./
 
 # Install app dependencies
 RUN npm install
@@ -17,7 +17,7 @@ RUN npm install -g ionic
 COPY ./sericulture .
 
 # Build the Ionic app
- RUN ionic build
+RUN ionic build
 
 # Expose the port that the app will run on (if necessary)
 EXPOSE 4200
