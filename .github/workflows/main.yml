@@ -21,12 +21,12 @@ jobs:
 
    - name: Install Dependencies
      run: npm install
-     #working-directory: ./CeleSmart
+     #working-directory: ./sericulture
     
 
    - name: Build Ionic App
      run: npm run build 
-     #working-directory: ./CeleSmart
+     #working-directory: ./sericulture
  
    - name: Set up Docker Buildx
      uses: docker/setup-buildx-action@v1
