@@ -1,21 +1,26 @@
-# Use the official Node.js image as the base image
-FROM node:14
+# Use an official Node.js runtime as the base image for the build stage
+FROM node:16 as build
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Copy package.json and package-lock.json (if available)
-COPY package*.json ./
+# Copy the package.json and package-lock.json from the Angular app directory to the container
+COPY ./package*.json ./
 
-# Install Node.js dependencies
+# Install app dependencies
 RUN npm install
 
-# Copy the remaining application code
-COPY . .
+# Install the Ionic CLI globally
+RUN npm install -g ionic
 
-# Expose port 4200
-#EXPOSE 4200
+# Copy the rest of the application code to the working directory
+#COPY ./CeleSmart .
 
+# Build the Ionic app
+ RUN ionic build
 
-# Run Angular app with adjusted stack size
-CMD ["node", "--stack-size=16000", "node_modules/@angular/cli/bin/ng", "serve", "--host", "0.0.0.0"]
+# Expose the port that the app will run on (if necessary)
+EXPOSE 4200
+
+# Use the CMD instruction to specify the command to run when starting the container
+CMD ["npm", "start", "--host=0.0.0.0", "--disable-host-check"]
