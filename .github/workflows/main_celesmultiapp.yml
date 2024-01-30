@@ -15,7 +15,7 @@ jobs:
       - name: Deploy app1
         uses: azure/webapps-deploy@v2
         with:
-          app-name: <Your-App-Service-Name>
+          app-name: <celesmultiapp>
           slot-name: production
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D1FCBE07276F494C94A0E3DA5975E2E9_APP1 }}
 
@@ -28,7 +28,7 @@ jobs:
       - name: Deploy app2
         uses: azure/webapps-deploy@v2
         with:
-          app-name: <Your-App-Service-Name>
+          app-name: <celesmultiapp>
           slot-name: production
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D1FCBE07276F494C94A0E3DA5975E2E9_APP2 }}
 
