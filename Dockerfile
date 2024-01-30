@@ -1,26 +1,38 @@
-# Use an official Node.js runtime as the base image for the build stage
-FROM node:16 as build
+# Stage 1: Build app1
+FROM node:16 as build-app1
+
+WORKDIR /app/app1
+
+COPY ./sericulture/app1/package*.json ./
+RUN npm install
+RUN npm install -g ionic
+COPY ./sericulture/app1 .
+RUN ionic build
+
+# Stage 2: Build app2
+FROM node:16 as build-app2
+
+WORKDIR /app/app2
+
+COPY ./celesmart/app2/package*.json ./
+RUN npm install
+RUN npm install -g ionic
+COPY ./celesmart/app2 .
+RUN ionic build
+
+# Stage 3: Final image
+FROM node:16
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json from the Angular app directory to the container
-COPY ./sericulture/package*.json ./
+# Copy the built artifacts from the previous stages
+COPY --from=build-app1 /app/app1/dist /app/app1
+COPY --from=build-app2 /app/app2/dist /app/app2
 
-# Install app dependencies
-RUN npm install
+# Expose the ports if necessary
+# EXPOSE 4200
+# EXPOSE 4300
 
-# Install the Ionic CLI globally
-RUN npm install -g ionic
-
-# Copy the rest of the application code to the working directory
-COPY ./sericulture .
-
-# Build the Ionic app
-RUN ionic build
-
-# Expose the port that the app will run on (if necessary)
-EXPOSE 4200
-
-# Use the CMD instruction to specify the command to run when starting the container
+# You may need to customize the CMD based on how you want to run your applications
 CMD ["npm", "start", "--host=0.0.0.0", "--disable-host-check"]
