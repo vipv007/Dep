@@ -3,7 +3,7 @@ FROM node:16 as build-app1
 
 WORKDIR /app/app1
 
-COPY ./sericulture/app1/package*.json ./
+COPY ./sericulture/package*.json ./
 RUN npm install
 RUN npm install -g ionic
 COPY ./sericulture/app1 .
@@ -14,7 +14,7 @@ FROM node:16 as build-app2
 
 WORKDIR /app/app2
 
-COPY ./celesmart/app2/package*.json ./
+COPY ./celesmart/package*.json ./
 RUN npm install
 RUN npm install -g ionic
 COPY ./celesmart/app2 .
@@ -27,8 +27,8 @@ FROM node:16
 WORKDIR /app
 
 # Copy the built artifacts from the previous stages
-COPY --from=build-app1 /app/app1/dist /app/app1
-COPY --from=build-app2 /app/app2/dist /app/app2
+# COPY --from=build-app1 /app/app1/dist /app/app1
+# COPY --from=build-app2 /app/app2/dist /app/app2
 
 # Expose the ports if necessary
 # EXPOSE 4200
