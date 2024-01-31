@@ -21,25 +21,25 @@ jobs:
 
       - name: Install Angular CLI and dependencies for App1
         run: |
-          cd CeleSmartApp1
+          cd CeleSmart
           npm install -g @angular/cli
           npm install --legacy-peer-deps 
 
       - name: npm install, build, and test for App1
         run: |
-          cd CeleSmartApp1
+          cd CeleSmart
           npm run build --if-present
 
       - name: List contents of deployment directory for App1
         run: |
           echo "Contents of deployment directory for App1:"
-          ls -R ./CeleSmartApp1/www
+          ls -R ./CeleSmart/www
       
       - name: Upload artifact for deployment job for App1
         uses: actions/upload-artifact@v3
         with:
           name: node-app1
-          path: ./CeleSmartApp1/www
+          path: ./CeleSmart/www
 
   build_and_deploy_app2:
     runs-on: windows-latest
@@ -55,25 +55,25 @@ jobs:
 
       - name: Install Angular CLI and dependencies for App2
         run: |
-          cd CeleSmartApp2
+          cd sericulture
           npm install -g @angular/cli
           npm install --legacy-peer-deps 
 
       - name: npm install, build, and test for App2
         run: |
-          cd CeleSmartApp2
+          cd sericulture
           npm run build --if-present
 
       - name: List contents of deployment directory for App2
         run: |
           echo "Contents of deployment directory for App2:"
-          ls -R ./CeleSmartApp2/www
+          ls -R ./sericulture/www
       
       - name: Upload artifact for deployment job for App2
         uses: actions/upload-artifact@v3
         with:
           name: node-app2
-          path: ./CeleSmartApp2/www
+          path: ./sericulture/www
 
   deploy_app1:
     runs-on: ubuntu-latest
@@ -124,7 +124,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp2
         with:
-          app-name: 'CeleSmartApp2'
+          app-name: 'sericulture'
           slot-name: 'Production'
           package: /home/runner/work/Deploy/Deploy
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_APP2 }}
