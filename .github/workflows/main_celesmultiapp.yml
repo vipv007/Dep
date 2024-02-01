@@ -126,5 +126,5 @@ jobs:
         with:
           app-name: 'sericulture'
           slot-name: 'Production'
-          package: /home/runner/work/Dep/Dep
+          package: ./sericulture/www
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_APP2 }}
