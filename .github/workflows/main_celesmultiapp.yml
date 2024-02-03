@@ -83,6 +83,10 @@ jobs:
       url: ${{ steps.deploy-to-webapp1.outputs.webapp-url }}
     
     steps:
+      - name: Azure Login
+        run: |
+         az login
+        
       - name: Download artifact from build job for App1
         uses: actions/download-artifact@v3
         with:
